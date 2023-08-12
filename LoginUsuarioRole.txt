@@ -39,5 +39,5 @@ REVOKE DELETE, UPDATE, INSERT ON Clientes FROM Ana_teste
  
  USE Loja
  GO
- DENY DELETE ON Funcionario TO FuncaoGerente
+ DENY DELETE ON Funcionario TO Ana_Teste
  
