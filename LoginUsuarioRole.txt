@@ -27,11 +27,11 @@ REVOKE DELETE, UPDATE, INSERT ON Clientes FROM Ana_teste
  GO
  CREATE ROLE FuncaoGerente;
 
---Dando permissões para a role PapelGerente
+--Dando permissões para a role FuncaoGerente
 
  GRANT SELECT, INSERT, UPDATE, DELETE ON Clientes TO FuncaoGerente
 
- --Adicionando mebro na role PapelGerente
+ --Adicionando mebro na role FuncaoGerente
 
  ALTER ROLE FuncaoGerente ADD MEMBER Ana_Teste
 
