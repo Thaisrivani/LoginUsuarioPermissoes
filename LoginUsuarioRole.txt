@@ -27,17 +27,25 @@ REVOKE DELETE, UPDATE, INSERT ON Clientes FROM Ana_teste
  GO
  CREATE ROLE FuncaoGerente;
 
---Dando permissões para a role PapelGerente
+--Dando permissões para a role FuncaoGerente
 
  GRANT SELECT, INSERT, UPDATE, DELETE ON Clientes TO FuncaoGerente
 
- --Adicionando mebro na role PapelGerente
+ --Adicionando membro na role FuncaoGerente
 
  ALTER ROLE FuncaoGerente ADD MEMBER Ana_Teste
 
- --Tirando a permissão de delet concedida pela inclusão no grupo FuncaoGerente de um usuario expecfico 
+ --Tirando a permissão de delete concedida pela inclusão no grupo FuncaoGerente de um usuário específico
  
  USE Loja
  GO
  DENY DELETE ON Funcionario TO Ana_Teste
- 
+
+
+
+
+
+
+
+
+
